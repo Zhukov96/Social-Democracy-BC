@@ -76,27 +76,19 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Social Credit">Z</span>!}: [+ z_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span class="tooltip-text" title="Liberals">DVP</span>!}: [+ dvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
-
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
-
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
-
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span class="tooltip-text" title="Conservatives">KPD</span>!}: [+ kpd_relation : relationships +]
 
 = Internal Factions of the SPD
 
-{!<span class="tooltip-text" title="The grouping which threw its support behind human rights and labour lawyer Thomas Berger in 1969 represents the institutional power of unions formally affiliated to the party.">Bergerites</span>!} strength: [+ Bergerites_strength : strength +], dissent: [+ Bergerites_dissent : dissent +]
+{!<span class="tooltip-text" title="The grouping which threw its support behind Thomas Berger in 1969 represents the institutional power of unions formally affiliated to the party.">Bergerites</span>!} strength: [+ Bergerites_strength : strength +], dissent: [+ Bergerites_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The faction which coalesced around Dave Barrett as the standard bearer of mainstream NDP ideology can perhaps best be summed up by Barrett’s insistence that “we are not a labour party” but “a party which represents the common interests of the common man.”.">Barrettites</span>!} strength: [+ Barrettites_strength : strength +], dissent: [+ Barrettites_dissent : dissent +]
+{!<span class="tooltip-text" title="The standard bearer of mainstream NDP ideology can perhaps best be summed up by Barrett’s insistence that “we are not a labour party” but “a party which represents the common interests of the common man.”.">Barrettites</span>!} strength: [+ Barrettites_strength : strength +], dissent: [+ Barrettites_dissent : dissent +]
 
-{!<span class="tooltip-text" title="A combination of grassroots organizing at the local level combined with support from progressive intellectuals has pushed the cause of social reform closer to the forefront of party debates.">Progressives</span>!} strength: [+ Progressives_strength : strength +], dissent: [+ Progressives_dissent : dissent +]
-
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="A combination of grassroots organizing at the local level combined with support from progressive intellectuals has pushed the cause of social reform.">Progressives</span>!} strength: [+ Progressives_strength : strength +], dissent: [+ Progressives_dissent : dissent +]
 
 [? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
