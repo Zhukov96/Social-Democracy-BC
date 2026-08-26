@@ -151,7 +151,7 @@ Q.catholics_other = 5;
 
 Q.ndp_r = 25;
 Q.kpd_r = 10;
-Q.z_r = 15;
+Q.socreds = 15;
 Q.ddp_r = 10;
 Q.dvp_r = 10;
 Q.dnvp_r = 14;
@@ -233,7 +233,7 @@ Q.catholics_other = 5;
 
 Q.ndp_r = 25;
 Q.kpd_r = 10;
-Q.z_r = 15;
+Q.socreds = 15;
 Q.ddp_r = 10;
 Q.dvp_r = 10;
 Q.dnvp_r = 14;
@@ -247,7 +247,7 @@ set-jump: post_election
 on-arrival: {!
 // set congress proportion to votes
 Q.ndp_r = Q.ndp_votes;
-Q.z_r = Q.z_votes;
+Q.socreds = Q.z_votes;
 Q.kpd_r = Q.kpd_votes;
 Q.ddp_r = Q.ddp_votes;
 Q.dvp_r = Q.dvp_votes;
@@ -265,18 +265,18 @@ if (Q.kpd_r >= Q.ndp_r && Q.kpd_r >= Q.nsdap_r) {
 }
 
 // coalitions
-Q.weimar_coalition = Q.ndp_r + Q.ddp_r + Q.z_r - 3;
-Q.grand_coalition = Q.ndp_r + Q.ddp_r + Q.z_r + Q.dvp_r;
-Q.bourgeois_coalition = Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
-Q.center_right_coalition = Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
-Q.right_coalition = Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
+Q.weimar_coalition = Q.ndp_r + Q.ddp_r + Q.socreds - 3;
+Q.grand_coalition = Q.ndp_r + Q.ddp_r + Q.socreds + Q.dvp_r;
+Q.bourgeois_coalition = Q.ddp_r + Q.socreds + Q.dvp_r + Q.other_r;
+Q.center_right_coalition = Q.socreds + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
+Q.right_coalition = Q.socreds + Q.dvp_r + Q.other_r + Q.dnvp_r;
 Q.far_right_coalition = Q.dnvp_r + Q.nsdap_r;
 Q.left_coalition = Q.ndp_r + Q.kpd_r;
 // this is an absurd concept lol
-Q.united_front_coalition = Q.ndp_r + Q.kpd_r + Q.z_r + Q.ddp_r - 3;
+Q.united_front_coalition = Q.ndp_r + Q.kpd_r + Q.socreds + Q.ddp_r - 3;
 Q.anti_democratic_coalition = Q.kpd_r + Q.nsdap_r;
 // aka everyone except nazi, kpd, dnvp
-Q.neo_weimar_coalition = Q.ndp_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
+Q.neo_weimar_coalition = Q.ndp_r + Q.ddp_r + Q.socreds + Q.dvp_r + Q.other_r;
 !}
 
 The electoral system is essentially proportional, with the proportion of Reichstag seats roughly equal to the proportion of votes.
@@ -284,16 +284,16 @@ The electoral system is essentially proportional, with the proportion of Reichst
 **Election results:**
 
 # 1928: 30, 1930: 25, 1932: 22
-ndp: [+ ndp_r +]
+NDP: [+ ndp_r +]
 
 # 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_r +]
+Socreds: [+ socreds +]
 
 # 1928: 10, 1930: 13
-KPD: [+ kpd_r +]
+Liberals: [+ kpd_r +]
 
 # 1928: 5, 1930: 4 (as DstP)
-DDP: [+ ddp_r +]
+Conservatives: [+ ddp_r +]
 
 # 1928: 9, 1930: 5
 DVP: [+ dvp_r +]
@@ -309,9 +309,9 @@ Other: [+ other_r +]
 
 **Potential coalitions:**
 
-Weimar Coalition (ndp + Z + DDP): [+ weimar_coalition +]
+Weimar Coalition (NDP + Z + DDP): [+ weimar_coalition +]
 
-Grand Coalition (ndp + Z + BVP + DDP + DVP): [+ grand_coalition +]
+Grand Coalition (NDP + Z + BVP + DDP + DVP): [+ grand_coalition +]
 
 Bourgeois Coalition (Z + BVP + DDP + DVP + Others): [+ bourgeois_coalition +]
 
