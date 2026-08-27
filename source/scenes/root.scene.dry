@@ -48,12 +48,12 @@ Q.dissent_percent = 5;
 // factions
 Q.factions = ['Bergerites', 'Barrettites', 'Progressives'];
 // should this be normalized to 100%?
-Q.Bergerites_strength = 15;
+Q.Bergerites_strength = 30;
 Q.Bergerites_dissent = 20;
-Q.Barrettites_strength = 30;
+Q.Barrettites_strength = 45;
 Q.Barrettites_dissent = 0;
 Q.Progressives_strength = 25;
-Q.Progressives_dissent = 5;
+Q.Progressives_dissent = 20;
 
 // secret events...
 Q.unions_independent = 0;
@@ -97,7 +97,7 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
+Q.socreds_relation = 50;
 Q.kpd_relation = 25;
 Q.ddp_relation = 60;
 Q.dvp_relation = 35;
@@ -108,9 +108,9 @@ Q.NSDAP_relation = 0;
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
 Q.kpd_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
+Q.socreds_leader = "Brüning";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the ndp.
-Q.z_party_leader = "Marx";
+Q.socreds_party_leader = "Marx";
 Q.nsdap_leader = "Hitler";
 
 // hmm... maybe we can play nice with Hindenburg???
@@ -121,7 +121,7 @@ Q.hindenburg_enabled = 0;
 
 // Does the ndp lead in Prussia?
 Q.ndp_prussia = 1;
-// Options: ndp, z, dnvp, papen, nsdap
+// Options: ndp, socreds, dnvp, papen, nsdap
 Q.prussian_government = "ndp";
 
 // The array of forces - paramilitary groups
@@ -233,7 +233,7 @@ Q.sapd_formed = 0;
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_ndp = 60;
 Q.workers_kpd = 20;
-Q.workers_z = 5;
+Q.workers_socreds = 5;
 Q.workers_ddp = 0;
 Q.workers_dvp = 0;
 Q.workers_dnvp = 5;
@@ -242,7 +242,7 @@ Q.workers_other = 10;
 
 Q.old_middle_ndp = 5;
 Q.old_middle_kpd = 0;
-Q.old_middle_z = 5;
+Q.old_middle_socreds = 5;
 Q.old_middle_ddp= 10;
 Q.old_middle_dvp = 25;
 Q.old_middle_dnvp = 25;
@@ -251,7 +251,7 @@ Q.old_middle_other = 10;
 
 Q.new_middle_ndp = 5;
 Q.new_middle_kpd = 1;
-Q.new_middle_z = 10;
+Q.new_middle_socreds = 10;
 Q.new_middle_ddp= 25;
 Q.new_middle_dvp = 25;
 Q.new_middle_dnvp = 10;
@@ -260,7 +260,7 @@ Q.new_middle_other = 15;
 
 Q.rural_ndp = 10;
 Q.rural_kpd = 0;
-Q.rural_z = 5;
+Q.rural_socreds = 5;
 Q.rural_ddp= 5;
 Q.rural_dvp = 15;
 Q.rural_dnvp = 45;
@@ -269,7 +269,7 @@ Q.rural_other = 10;
 
 Q.unemployed_ndp = 25;
 Q.unemployed_kpd = 55;
-Q.unemployed_z = 1;
+Q.unemployed_socreds = 1;
 Q.unemployed_ddp = 0;
 Q.unemployed_dvp = 0;
 Q.unemployed_dnvp = 5;
@@ -278,7 +278,7 @@ Q.unemployed_other = 9;
 
 Q.catholics_ndp = 15;
 Q.catholics_kpd = 2;
-Q.catholics_z = 50;
+Q.catholics_socreds = 50;
 Q.catholics_ddp = 0;
 Q.catholics_dvp = 5;
 Q.catholics_dnvp = 5;
@@ -294,7 +294,7 @@ Q.catholics_other = 12;
 // They did not have a CDU/CSU-style relationship.
 Q.ndp_r = 26;
 Q.kpd_r = 9;
-Q.z_r = 17;
+Q.socreds_r = 17;
 Q.ddp_r = 6;
 Q.dvp_r = 10;
 Q.dnvp_r = 20;
@@ -304,7 +304,7 @@ Q.other_r = 9;
 // diff from prev
 Q.old_ndp_r = 26;
 Q.old_kpd_r = 9;
-Q.old_z_r = 17;
+Q.old_socreds_r = 17;
 Q.old_ddp_r = 6;
 Q.old_dvp_r = 10;
 Q.old_dnvp_r = 20;
@@ -325,14 +325,11 @@ Q.party_support_records = [];
 // inflation and unemployment records
 Q.economic_records = [];
 
-
-// State of the government
-Q.president = "Hindenburg";
-// starting chancellor: Wilhelm Marx
-Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
+// starting chancellor: W.A.C. Bennett
+Q.chancellor = "Bennett";
+Q.chancellor_party = 'Socreds';
 Q.ndp_in_government = 0;
-Q.z_in_government = 1;
+Q.socreds_in_government = 1;
 Q.ddp_in_government = 0;
 Q.dvp_in_government = 1;
 Q.dnvp_in_government = 1;
@@ -608,7 +605,7 @@ Q.reformist_dissent = 25;
 Q.left_dissent = 30;
 Q.labor_dissent = 25;
 Q.center_dissent = 25;
-Q.z_relation = 41;
+Q.socreds_relation = 41;
 Q.kpd_relation = 16;
 Q.dvp_relation = 31;
 Q.budget = 2;
