@@ -48,11 +48,11 @@ Q.dissent_percent = 5;
 // factions
 Q.factions = ['Bergerites', 'Barrettites', 'Progressives'];
 // should this be normalized to 100%?
-Q.Bergerites_strength = 30;
+Q.Bergerites_strength = 25;
 Q.Bergerites_dissent = 20;
-Q.Barrettites_strength = 45;
+Q.Barrettites_strength = 35;
 Q.Barrettites_dissent = 0;
-Q.Progressives_strength = 25;
+Q.Progressives_strength = 15;
 Q.Progressives_dissent = 20;
 
 // secret events...
