@@ -75,7 +75,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="The grouping which threw its support behind Thomas Berger in 1969 represents the institutional power of unions  affiliated to the party.">Bergerites</span>!} strength: [+ Bergerites_strength : strength +], dissent: [+ Bergerites_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Mainstream NDP ideology best be summed up by Barrett’s insistence that 'we are not a labour party' but 'a party which represents the common interests of the common man.'">Barrettites</span>!} strength: [+ Barrettites_strength : strength +], dissent: [+ Barrettites_dissent : dissent +]
+{!<span class="tooltip-text" title="Mainstream NDP ideology best be summed up by Barrett’s insistence that not a labour party but a party which represents the common interests of the common man.">Barrettites</span>!} strength: [+ Barrettites_strength : strength +], dissent: [+ Barrettites_dissent : dissent +]
 
 {!<span class="tooltip-text" title="A combination of grassroots organizing and progressive intellectuals advocating social reform.">Progressives</span>!} strength: [+ Progressives_strength : strength +], dissent: [+ Progressives_dissent : dissent +]
 
