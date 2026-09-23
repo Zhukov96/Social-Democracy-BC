@@ -1,13 +1,13 @@
-title: Otto Wels
+title: Ernie Hall
 is-pinned-card: true
 tags: advisor, centrist
-card-image: img/portraits/WelsOtto.jpg
-view-if: wels_advisor = 1
+card-image: img/portraits/Hall.jpg
+view-if: hall_advisor = 1
 new-page: true
 
-= Otto Wels
+= Ernie Hall
 
-Wels is the long-time chairman of the SPD. He is a gifted organizer and a member of the centrist faction.
+Hall is the long-serving NDP provincial secretary with a background in business which lends itself to party organizing. 
 
 - @clear_agenda
 - @party_discipline
