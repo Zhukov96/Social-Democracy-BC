@@ -2,7 +2,7 @@ title: Bob Williams
 is-pinned-card: true
 tags: advisor, barretite
 card-image: img/portraits/Williams.jpg
-view-if: hilferding_advisor = 1
+view-if: williams_advisor = 1
 new-page: true
 #face-image: img/portraits/Williams.jpg
 
