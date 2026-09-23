@@ -1,14 +1,14 @@
-title: Hermann Müller
+title: Bill King
 is-pinned-card: true 
 tags: advisor, centrist
-card-image: img/portraits/MüllerHermann.jpg
+card-image: img/portraits/King.jpg
 new-page: true
-view-if: muller_advisor = 1
+view-if: king_advisor = 1
 
-= Herman Müller
+= Bill King
 
 
-Müller is a former [? if chancellor = "Müller": and current ?] Chancellor, and is a long-time Social Democratic leader.
+King worked for decades on the railways of eastern BC and is known for his toughness.
 
 - @coalition
 - @toleration
